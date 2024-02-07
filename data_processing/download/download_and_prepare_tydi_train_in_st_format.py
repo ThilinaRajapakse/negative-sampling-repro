@@ -93,9 +93,9 @@ def download_and_prepare_tydi_train():
 
     combined_df = pd.concat(tydi_dfs)
 
-    combined_df.to_csv(f"../data/tydi/{train_type}_tydi.tsv", sep="\t", index=False)
+    combined_df.to_csv(f"../../data/tydi/{train_type}_tydi.tsv", sep="\t", index=False)
 
-    print("Combined TyDi dataset saved to ../data/tydi/tydi-train.tsv")
+    print("Combined TyDi dataset saved to ../../data/tydi/tydi-train.tsv")
 
     print("=== Mr. TyDi download complete ===")
 
