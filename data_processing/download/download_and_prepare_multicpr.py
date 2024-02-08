@@ -11,7 +11,7 @@ def process_multi_cpr():
 
     # Read ecom corpus
     ecom_corpus = pd.read_csv(
-        "..//Multi-CPR/data/ecom/corpus.tsv",
+        "../Multi-CPR/data/ecom/corpus.tsv",
         sep="\t",
         header=None,
         names=["_id", "text"],
@@ -19,7 +19,7 @@ def process_multi_cpr():
 
     # Read ecom queries
     queries_df = pd.read_csv(
-        "/../Multi-CPR/data/ecom/dev.query.txt",
+        "../Multi-CPR/data/ecom/dev.query.txt",
         sep="\t",
         header=None,
         names=["_id", "text"],
@@ -27,7 +27,7 @@ def process_multi_cpr():
 
     # Read ecom qrels
     qrels_df = pd.read_csv(
-        "/../Multi-CPR/data/ecom/qrels.dev.tsv",
+        "../Multi-CPR/data/ecom/qrels.dev.tsv",
         sep="\t",
         header=None,
         names=["query-id", "NA", "corpus-id", "score"],

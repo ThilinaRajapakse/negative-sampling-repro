@@ -61,6 +61,7 @@ model_args.output_dir = f"../../trained_models/finetuned/ANCE-tydi"
 if __name__ == "__main__":
     # Setting the start method for multiprocessing
     from multiprocess import set_start_method
+
     set_start_method("spawn")
 
     # Create a TransformerModel
